@@ -44,7 +44,7 @@
       }
 
       form {
-        width: 50%;
+        width: 100%;
       }
 
       input[type="email"],
@@ -70,16 +70,11 @@
         display: none !important;
       }
 
-      .verifyCode,
-      .sendNewCode,
-      .changeClaims {
-        background: #369be7 !important;
-        border-radius: 0.5rem !important;
-      }
-
+      #continue,
       #emailVerificationControl_but_send_code {
         width: 100%;
-        padding: 0.2rem;
+        padding: 0.6rem;
+
         border-radius: 0.5rem;
         background: #369be7;
         color: white;
@@ -92,6 +87,25 @@
         display: none !important;
       }
 
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .sendNewCode,
+      .verifyCode {
+        background: transparent !important;
+        border: none;
+        color: #369be7;
+        border-radius: 0.5rem !important;
+      }
+      /*changeClaims  */
+      #emailVerificationControl_success_message,
+      .error {
+        color: red !important;
+      }
       ul {
         padding-left: 0 !important;
       }
@@ -111,15 +125,6 @@
         font-family: "Urbanist";
         src: url("https://ahmedgamalemam.github.io/b2c-login-page/fonts/Urbanist-Black.ttf")
           format("truetype");
-      }
-
-      #continue {
-        width: 100%;
-        padding: 0.2rem;
-        border-radius: 0.5rem;
-        background: #369be7;
-        color: white;
-        border: none;
       }
 
       @media (max-width: 840px) {
